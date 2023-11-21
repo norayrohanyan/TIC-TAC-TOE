@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+   
+    <div class="container" id="container">
+        <h1>Tic-Tac-Toe</h1>
+        <input type="number" id="board-size" class="input" placeholder="Enter board size (2-8)">
+
+        <div class="game-content" id = "game-content">   
+            <div class="game-table" id = "game-table">
+                <table id = "table">
+                    <tr>
+                        <th id="Total-playtime" colspan="2">Total play time is </th>
+                    </tr>
+                    <tr>
+                        <th>Player</th>
+                        <th>Time</th>
+                    </tr>
+                    <tr>
+                        <td id = "X" style="color: red;">X</td>
+                        <td id="timer1">00 : 00</td>
+                    </tr>
+                    <tr>
+                        <td id = "O">O</td>
+                        <td id="timer2">00 : 00</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="game-board" class="game-board"></div>
+            
+        </div>
+        <div class="button-container">
+            <button onclick="createBoard()" id="submit-button" class="button">Submit</button>
+            <button onclick="resetBoard()" id="restart-button" class="button">Exit</button>
+        </div>
+
+        <div id="result-back" class="result-back">
+            <div class="res-container">
+                <div id="res-title" class="res res-title"></div>
+                <div id="result" class="res result"></div>
+                <div class="res res-button button-container">
+                    <button onclick="createBoard()" id="submit-button" class="button">Play Again</button>
+                    <button onclick="resetBoard()" id="restart-button" class="button">Quit</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
